@@ -1,4 +1,9 @@
 <x-app-layout>
+
+    <x-slot name="title">
+        Home
+    </x-slot>
+
     <main>
         <div class="banner">
             <div class="container">
