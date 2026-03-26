@@ -2,68 +2,57 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
-
 use App\Models\Product;
-use App\Http\Requests\StoreProductRequest;
-use App\Http\Requests\UpdateProductRequest;
+use App\Models\Category;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class AdminProductController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
         $products = Product::all();
-        return view('admin.product.index', compact('products'));
+        $categories = Category::all();
+        return view('admin.product.index', compact('products', 'categories'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required|max:50',
+            'desc' => 'required|max:500',
+            'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        $product = Product::create($request->all());
+
+        if ($request->hasFile('img')) {
+            $product->img = $request->file('img')->store('public');
+        }
+        return back()->with('alert', 'Success create product!');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StoreProductRequest $request)
+    public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+            'name' => 'required|max:50',
+            'desc' => 'required|max:500',
+            'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $product = Product::where('id', $id)->first();
+        $productData = $request->all();
+
+        if ($request->hasFile('img')) {
+            $productData['img'] = $request->file('img')->store('public');
+        }
+
+        $product->update($productData);
+        return back()->with('alert', 'Success Edit product!');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Product $product)
+    public function destroy(string $id)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Product $product)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(UpdateProductRequest $request, Product $product)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Product $product)
-    {
-        //
+        Product::findOrFail($id)->delete();
+        return back()->with('alert', 'Success Delete product!');
     }
 }

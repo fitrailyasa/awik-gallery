@@ -46,32 +46,6 @@
     <!--Favicon-->
     <link rel="icon" href="{{ asset('favicon.ico') }}">
 
-    <style>
-        .btn-primary {
-            background-color: rgb(0, 0, 66);
-        }
-
-        .btn-primary:hover {
-            background-color: rgb(14, 14, 125);
-        }
-
-        .btn-primary:active {
-            background-color: rgb(14, 14, 125);
-        }
-
-        .btn-info {
-            background-color: rgb(30, 30, 244);
-        }
-
-        .btn-info:hover {
-            background-color: rgb(13, 13, 160);
-        }
-
-        .btn-info:active {
-            background-color: rgb(13, 13, 160);
-        }
-    </style>
-
     {{ $style ?? '' }}
 
 </head>

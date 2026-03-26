@@ -2,68 +2,55 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
-
 use App\Models\Category;
-use App\Http\Requests\StoreCategoryRequest;
-use App\Http\Requests\UpdateCategoryRequest;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class AdminCategoryController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
         $categories = Category::all();
         return view('admin.category.index', compact('categories'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required|max:50',
+            'desc' => 'required|max:500',
+            'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        $category = Category::create($request->all());
+
+        if ($request->hasFile('img')) {
+            $category->img = $request->file('img')->store('public');
+        }
+        return back()->with('alert', 'Success create category!');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StoreCategoryRequest $request)
+    public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+            'name' => 'required|max:50',
+            'desc' => 'required|max:500',
+            'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $category = Category::where('id', $id)->first();
+        $categoryData = $request->all();
+
+        if ($request->hasFile('img')) {
+            $categoryData['img'] = $request->file('img')->store('public');
+        }
+
+        $category->update($categoryData);
+        return back()->with('alert', 'Success Edit category!');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Category $category)
+    public function destroy(string $id)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Category $category)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(UpdateCategoryRequest $request, Category $category)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Category $category)
-    {
-        //
+        Category::findOrFail($id)->delete();
+        return back()->with('alert', 'Success Delete category!');
     }
 }
