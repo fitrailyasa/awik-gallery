@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title') - Awik Gallery</title>
 
-    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/style-prefix.css">
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ asset('assets/css/style-prefix.css') }}" type="text/css" media="all" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
@@ -28,7 +28,7 @@
                     <li class="menu-category">
                         <a href="{{ route('home') }}" class="menu-title">Home</a>
                     </li>
-                    <li class="menu-category">
+                    {{-- <li class="menu-category">
                         <a href="{{ route('makeup') }}" class="menu-title">Makeup</a>
                     </li>
                     <li class="menu-category">
@@ -42,7 +42,13 @@
                     </li>
                     <li class="menu-category">
                         <a href="{{ route('link') }}" class="menu-title">Link Affiliate</a>
-                    </li>
+                    </li> --}}
+                    @foreach ($categories as $category)
+                        <li class="menu-category">
+                            <a href="{{ route('category', $category->slug) }}"
+                                class="menu-title">{{ $category->name }}</a>
+                        </li>
+                    @endforeach
                     <li class="menu-category">
                         <a href="{{ route('contact') }}" class="menu-title">Contact</a>
                     </li>
@@ -316,7 +322,7 @@
 
     </header>
 
-    @yield('content')
+    {{ $slot }}
 
     <footer>
         <div class="footer-nav">
@@ -325,7 +331,7 @@
                     <li class="footer-nav-item">
                         <h2 class="nav-title">Information</h2>
                     </li>
-                    <li class="footer-nav-item">
+                    {{-- <li class="footer-nav-item">
                         <a href="{{ route('makeup') }}" class="footer-nav-link">Makeup</a>
                     </li>
                     <li class="footer-nav-item">
@@ -336,10 +342,13 @@
                     </li>
                     <li class="footer-nav-item">
                         <a href="{{ route('farm') }}" class="footer-nav-link">Kebun</a>
-                    </li>
-                    <li class="footer-nav-item">
-                        <a href="{{ route('link') }}" class="footer-nav-link">Link Affiliate</a>
-                    </li>
+                    </li> --}}
+                    @foreach ($categories as $category)
+                        <li class="footer-nav-item">
+                            <a href="{{ route('category', $category->slug) }}"
+                                class="footer-nav-link">{{ $category->name }}</a>
+                        </li>
+                    @endforeach
                 </ul>
 
                 <ul class="footer-nav-list">
@@ -414,7 +423,7 @@
         </div>
     </footer>
 
-    <script src="./assets/js/script.js"></script>
+    <script src="{{ asset('assets/js/script.js') }}"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

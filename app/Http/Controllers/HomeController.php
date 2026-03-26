@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Category;
 
 class HomeController extends Controller
 {
@@ -11,29 +12,12 @@ class HomeController extends Controller
         return view('client.index');
     }
 
-    public function makeup()
-    {
-        return view('client.makeup');
-    }
 
-    public function box()
+    public function category($slug)
     {
-        return view('client.box');
-    }
+        $category = Category::where('slug', $slug)->firstOrFail();
 
-    public function attire()
-    {
-        return view('client.attire');
-    }
-
-    public function farm()
-    {
-        return view('client.farm');
-    }
-
-    public function link()
-    {
-        return view('client.link');
+        return view('client.category', compact('category'));
     }
 
     public function contact()

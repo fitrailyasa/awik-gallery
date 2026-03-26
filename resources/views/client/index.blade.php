@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<x-app-layout>
     <main>
         <div class="banner">
 
@@ -1142,8 +1140,7 @@
 
                                         <a href="#" class="showcase-img-box">
                                             <img src="./assets/images/products/watch-3.jpg"
-                                                alt="pocket watch leather pouch" class="showcase-img"
-                                                width="70">
+                                                alt="pocket watch leather pouch" class="showcase-img" width="70">
                                         </a>
 
                                         <div class="showcase-content">
@@ -1167,8 +1164,7 @@
 
                                         <a href="#" class="showcase-img-box">
                                             <img src="./assets/images/products/jewellery-3.jpg"
-                                                alt="silver deer heart necklace" class="showcase-img"
-                                                width="70">
+                                                alt="silver deer heart necklace" class="showcase-img" width="70">
                                         </a>
 
                                         <div class="showcase-content">
@@ -1295,8 +1291,7 @@
 
                                         <a href="#" class="showcase-img-box">
                                             <img src="./assets/images/products/shampoo.jpg"
-                                                alt="shampoo conditioner packs" class="showcase-img"
-                                                width="70">
+                                                alt="shampoo conditioner packs" class="showcase-img" width="70">
                                         </a>
 
                                         <div class="showcase-content">
@@ -1320,8 +1315,7 @@
 
                                         <a href="#" class="showcase-img-box">
                                             <img src="./assets/images/products/jewellery-1.jpg"
-                                                alt="rose gold peacock earrings" class="showcase-img"
-                                                width="70">
+                                                alt="rose gold peacock earrings" class="showcase-img" width="70">
                                         </a>
 
                                         <div class="showcase-content">
@@ -1543,8 +1537,7 @@
                                         alt="Mens Winter Leathers Jackets" width="300"
                                         class="product-img default">
                                     <img src="./assets/images/products/jacket-4.jpg"
-                                        alt="Mens Winter Leathers Jackets" width="300"
-                                        class="product-img hover">
+                                        alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
 
                                     <p class="showcase-badge">15%</p>
 
@@ -2442,4 +2435,4 @@
         </div>
 
     </main>
-@endsection
+</x-app-layout>
