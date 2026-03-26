@@ -6,6 +6,7 @@ use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class AdminProductController extends Controller
 {
@@ -21,15 +22,19 @@ class AdminProductController extends Controller
         $request->validate([
             'name' => 'required|max:50',
             'desc' => 'nullable|max:500',
-            'price' => 'required|numeric',
             'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'price' => 'required|numeric',
             'category_id' => 'required',
         ]);
-        $product = Product::create($request->all());
+
+        $data = $request->all();
 
         if ($request->hasFile('img')) {
-            $product->img = $request->file('img')->store('public');
+            $data['img'] = $request->file('img')->store('products', 'public');
         }
+
+        Product::create($data);
+
         return back()->with('alert', 'Success create product!');
     }
 
@@ -43,20 +48,33 @@ class AdminProductController extends Controller
             'category_id' => 'required',
         ]);
 
-        $product = Product::where('id', $id)->first();
-        $productData = $request->all();
+        $product = Product::findOrFail($id);
+        $data = $request->all();
 
         if ($request->hasFile('img')) {
-            $productData['img'] = $request->file('img')->store('public');
+
+            if ($product->img && Storage::disk('public')->exists($product->img)) {
+                Storage::disk('public')->delete($product->img);
+            }
+
+            $data['img'] = $request->file('img')->store('products', 'public');
         }
 
-        $product->update($productData);
+        $product->update($data);
+
         return back()->with('alert', 'Success Edit product!');
     }
 
     public function destroy(string $id)
     {
-        Product::findOrFail($id)->delete();
+        $product = Product::findOrFail($id);
+
+        if ($product->img && Storage::disk('public')->exists($product->img)) {
+            Storage::disk('public')->delete($product->img);
+        }
+
+        $product->delete();
+
         return back()->with('alert', 'Success Delete product!');
     }
 }

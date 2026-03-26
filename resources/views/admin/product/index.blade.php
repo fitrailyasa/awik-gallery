@@ -27,7 +27,8 @@
                     <td>{{ $product->name ?? '-' }}</td>
                     <td class="d-none d-lg-table-cell">{{ $product->desc ?? '-' }}</td>
                     <td>
-                        <img class="img img-fluid" src="{{ asset('storage/' . $product->img) }}" alt="">
+                        <img class="img img-fluid" width="100" src="{{ asset('storage/' . $product->img) }}"
+                            alt="">
                     </td>
                     <td>Rp. {{ $product->price ?? '-' }}</td>
                     <td class="d-none d-lg-table-cell">{{ $product->category->name ?? '-' }}</td>

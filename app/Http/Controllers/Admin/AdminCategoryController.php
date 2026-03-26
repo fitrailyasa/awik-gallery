@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class AdminCategoryController extends Controller
 {
@@ -21,11 +22,15 @@ class AdminCategoryController extends Controller
             'desc' => 'nullable|max:500',
             'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
-        $category = Category::create($request->all());
+
+        $data = $request->all();
 
         if ($request->hasFile('img')) {
-            $category->img = $request->file('img')->store('public');
+            $data['img'] = $request->file('img')->store('categories', 'public');
         }
+
+        Category::create($data);
+
         return back()->with('alert', 'Success create category!');
     }
 
@@ -37,20 +42,33 @@ class AdminCategoryController extends Controller
             'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
-        $category = Category::where('id', $id)->first();
-        $categoryData = $request->all();
+        $category = Category::findOrFail($id);
+        $data = $request->all();
 
         if ($request->hasFile('img')) {
-            $categoryData['img'] = $request->file('img')->store('public');
+
+            if ($category->img && Storage::disk('public')->exists($category->img)) {
+                Storage::disk('public')->delete($category->img);
+            }
+
+            $data['img'] = $request->file('img')->store('categories', 'public');
         }
 
-        $category->update($categoryData);
+        $category->update($data);
+
         return back()->with('alert', 'Success Edit category!');
     }
 
     public function destroy(string $id)
     {
-        Category::findOrFail($id)->delete();
+        $category = Category::findOrFail($id);
+
+        if ($category->img && Storage::disk('public')->exists($category->img)) {
+            Storage::disk('public')->delete($category->img);
+        }
+
+        $category->delete();
+
         return back()->with('alert', 'Success Delete category!');
     }
 }
