@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Category;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
@@ -40,8 +41,8 @@ class HomeController extends Controller
     public function category($slug)
     {
         $category = Category::where('slug', $slug)->firstOrFail();
-
-        return view('client.category', compact('category'));
+        $products = Product::where('category_id', $category->id)->get();
+        return view('client.category', compact('category', 'products'));
     }
 
     public function contact()
