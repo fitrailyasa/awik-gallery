@@ -5,21 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awik Gallery - eCommerce Website</title>
+    <title>Awik Gallery</title>
 
-    <!--
-    - favicon
-  -->
     <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
-
-    <!--
-    - custom css link
-  -->
     <link rel="stylesheet" href="./assets/css/style-prefix.css">
-
-    <!--
-    - google font link
-  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
@@ -29,72 +18,18 @@
 
 <body>
 
-
-    <div class="overlay" data-overlay></div>
-
-
-    <!--
-    - HEADER
-  -->
-
     <header>
-
-        <div class="header-top">
-
-        </div>
-
-        <div class="header-main">
-
-            <div class="container">
-
-                <a href="#" class="header-logo">
-                    <img src="./assets/images/logo/logo.svg" alt="Awik Gallery's logo" width="120" height="36">
-                </a>
-
-                <div class="header-search-container">
-
-                    <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
-
-                    <button class="search-btn">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </button>
-
-                </div>
-
-                <div class="header-user-actions">
-
-                    <button class="action-btn">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </button>
-
-                    <button class="action-btn">
-                        <ion-icon name="heart-outline"></ion-icon>
-                        <span class="count">0</span>
-                    </button>
-
-                    <button class="action-btn">
-                        <ion-icon name="bag-handle-outline"></ion-icon>
-                        <span class="count">0</span>
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
 
         <nav class="desktop-navigation-menu">
 
             <div class="container">
 
                 <ul class="desktop-menu-category-list">
-
                     <li class="menu-category">
                         <a href="#" class="menu-title">Home</a>
                     </li>
-
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Menu 1</a>
+                        <a href="#" class="menu-title">Makeup</a>
 
                         <div class="dropdown-panel">
 
@@ -240,9 +175,8 @@
 
                         </div>
                     </li>
-
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Menu 2</a>
+                        <a href="#" class="menu-title">Papan Bunga - Ucapan</a>
 
                         <ul class="dropdown-list">
 
@@ -264,9 +198,8 @@
 
                         </ul>
                     </li>
-
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Menu 3</a>
+                        <a href="#" class="menu-title">Sewa Baju - Attire</a>
 
                         <ul class="dropdown-list">
 
@@ -288,9 +221,8 @@
 
                         </ul>
                     </li>
-
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Menu 4</a>
+                        <a href="#" class="menu-title">Kebun</a>
 
                         <ul class="dropdown-list">
 
@@ -312,9 +244,8 @@
 
                         </ul>
                     </li>
-
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Menu 5</a>
+                        <a href="#" class="menu-title">Link Affiliate</a>
 
                         <ul class="dropdown-list">
 
@@ -336,7 +267,6 @@
 
                         </ul>
                     </li>
-
                     <li class="menu-category">
                         <a href="#" class="menu-title">Contact</a>
                     </li>
@@ -536,7 +466,6 @@
             <div class="menu-bottom">
 
                 <ul class="menu-category-list">
-
                     <li class="menu-category">
 
                         <button class="accordion-menu" data-accordion-btn>
@@ -562,7 +491,6 @@
                         </ul>
 
                     </li>
-
                     <li class="menu-category">
                         <button class="accordion-menu" data-accordion-btn>
                             <p class="menu-title">Currency</p>
@@ -583,25 +511,21 @@
                 </ul>
 
                 <ul class="menu-social-container">
-
                     <li>
                         <a href="#" class="social-link">
                             <ion-icon name="logo-facebook"></ion-icon>
                         </a>
                     </li>
-
                     <li>
                         <a href="#" class="social-link">
                             <ion-icon name="logo-twitter"></ion-icon>
                         </a>
                     </li>
-
                     <li>
                         <a href="#" class="social-link">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </a>
                     </li>
-
                     <li>
                         <a href="#" class="social-link">
                             <ion-icon name="logo-linkedin"></ion-icon>
@@ -616,20 +540,7 @@
 
     </header>
 
-
-
-
-
-    <!--
-    - MAIN
-  -->
-
     <main>
-
-        <!--
-      - BANNER
-    -->
-
         <div class="banner">
 
             <div class="container">
@@ -642,54 +553,6 @@
 
                         <div class="banner-content">
 
-                            <p class="banner-subtitle">Trending item</p>
-
-                            <h2 class="banner-title">Women's latest fashion sale</h2>
-
-                            <p class="banner-text">
-                                starting at &dollar; <b>20</b>.00
-                            </p>
-
-                            <a href="#" class="banner-btn">Shop now</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="slider-item">
-
-                        <img src="./assets/images/banner-2.jpg" alt="modern sunglasses" class="banner-img">
-
-                        <div class="banner-content">
-
-                            <p class="banner-subtitle">Trending accessories</p>
-
-                            <h2 class="banner-title">Modern sunglasses</h2>
-
-                            <p class="banner-text">
-                                starting at &dollar; <b>15</b>.00
-                            </p>
-
-                            <a href="#" class="banner-btn">Shop now</a>
-
-                        </div>
-
-                    </div>
-
-                    <div class="slider-item">
-
-                        <img src="./assets/images/banner-3.jpg" alt="new fashion summer sale" class="banner-img">
-
-                        <div class="banner-content">
-
-                            <p class="banner-subtitle">Sale Offer</p>
-
-                            <h2 class="banner-title">New fashion summer sale</h2>
-
-                            <p class="banner-text">
-                                starting at &dollar; <b>29</b>.99
-                            </p>
-
                             <a href="#" class="banner-btn">Shop now</a>
 
                         </div>
@@ -701,14 +564,6 @@
             </div>
 
         </div>
-
-
-
-
-
-        <!--
-      - CATEGORY
-    -->
 
         <div class="category">
 
@@ -882,22 +737,9 @@
 
         </div>
 
-
-
-
-
-        <!--
-      - PRODUCT
-    -->
-
         <div class="product-container">
 
             <div class="container">
-
-
-                <!--
-          - SIDEBAR
-        -->
 
                 <div class="sidebar  has-scrollbar" data-mobile-menu>
 
@@ -1392,14 +1234,7 @@
                     </div>
 
                 </div>
-
-
-
                 <div class="product-box">
-
-                    <!--
-            - PRODUCT MINIMAL
-          -->
 
                     <div class="product-minimal">
 
@@ -1735,8 +1570,7 @@
 
                                         <a href="#" class="showcase-img-box">
                                             <img src="./assets/images/products/sports-6.jpg"
-                                                alt="air tekking shoes - white" class="showcase-img"
-                                                width="70">
+                                                alt="air tekking shoes - white" class="showcase-img" width="70">
                                         </a>
 
                                         <div class="showcase-content">
@@ -1809,8 +1643,7 @@
 
                                         <a href="#" class="showcase-img-box">
                                             <img src="./assets/images/products/shoe-2.jpg"
-                                                alt="casual men's brown shoes" class="showcase-img"
-                                                width="70">
+                                                alt="casual men's brown shoes" class="showcase-img" width="70">
                                         </a>
 
                                         <div class="showcase-content">
@@ -2055,12 +1888,6 @@
 
                     </div>
 
-
-
-                    <!--
-            - PRODUCT FEATURED
-          -->
-
                     <div class="product-featured">
 
                         <h2 class="title">Deal of the day</h2>
@@ -2240,12 +2067,6 @@
                         </div>
 
                     </div>
-
-
-
-                    <!--
-            - PRODUCT GRID
-          -->
 
                     <div class="product-main">
 
@@ -2905,31 +2726,14 @@
                         </div>
 
                     </div>
-
                 </div>
-
             </div>
-
         </div>
 
 
-
-
-
-        <!--
-      - TESTIMONIALS, CTA & SERVICE
-    -->
-
         <div>
-
             <div class="container">
-
                 <div class="testimonials-box">
-
-                    <!--
-            - TESTIMONIALS
-          -->
-
                     <div class="testimonial">
 
                         <h2 class="title">testimonial</h2>
@@ -2955,12 +2759,6 @@
 
                     </div>
 
-
-
-                    <!--
-            - CTA
-          -->
-
                     <div class="cta-container">
 
                         <img src="./assets/images/cta-banner.jpg" alt="summer collection" class="cta-banner">
@@ -2979,11 +2777,6 @@
 
                     </div>
 
-
-
-                    <!--
-            - SERVICE
-          -->
 
                     <div class="service">
 
@@ -3075,14 +2868,6 @@
             </div>
 
         </div>
-
-
-
-
-
-        <!--
-      - BLOG
-    -->
 
         <div class="blog">
 
@@ -3197,173 +2982,124 @@
 
     </main>
 
-
-
-
-
-    <!--
-    - FOOTER
-  -->
-
     <footer>
-
         <div class="footer-nav">
-
             <div class="container">
-
                 <ul class="footer-nav-list">
-
                     <li class="footer-nav-item">
                         <h2 class="nav-title">Popular Categories</h2>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Fashion</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Electronic</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Cosmetic</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Health</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Watches</a>
                     </li>
-
                 </ul>
 
                 <ul class="footer-nav-list">
-
                     <li class="footer-nav-item">
                         <h2 class="nav-title">Products</h2>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Prices drop</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">New products</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Best sales</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Contact us</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Sitemap</a>
                     </li>
-
                 </ul>
 
                 <ul class="footer-nav-list">
-
                     <li class="footer-nav-item">
                         <h2 class="nav-title">Our Company</h2>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Delivery</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Legal Notice</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Terms and conditions</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">About us</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Secure payment</a>
                     </li>
-
                 </ul>
 
                 <ul class="footer-nav-list">
-
                     <li class="footer-nav-item">
                         <h2 class="nav-title">Services</h2>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Prices drop</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">New products</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Best sales</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Contact us</a>
                     </li>
-
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Sitemap</a>
                     </li>
-
                 </ul>
 
                 <ul class="footer-nav-list">
-
                     <li class="footer-nav-item">
                         <h2 class="nav-title">Contact</h2>
                     </li>
-
                     <li class="footer-nav-item flex">
                         <div class="icon-box">
                             <ion-icon name="location-outline"></ion-icon>
                         </div>
-
                         <address class="content">
                             419 State 414 Rte
                             Beaver Dams, New York(NY), 14812, USA
                         </address>
                     </li>
-
                     <li class="footer-nav-item flex">
                         <div class="icon-box">
                             <ion-icon name="call-outline"></ion-icon>
                         </div>
-
                         <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
                     </li>
-
                     <li class="footer-nav-item flex">
                         <div class="icon-box">
                             <ion-icon name="mail-outline"></ion-icon>
                         </div>
-
                         <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
                     </li>
-
                 </ul>
 
                 <ul class="footer-nav-list">
-
                     <li class="footer-nav-item">
                         <h2 class="nav-title">Follow Us</h2>
                     </li>
-
                     <li>
                         <ul class="social-link">
 
@@ -3390,39 +3126,22 @@
                                     <ion-icon name="logo-instagram"></ion-icon>
                                 </a>
                             </li>
-
                         </ul>
                     </li>
-
                 </ul>
-
             </div>
-
         </div>
 
         <div class="footer-bottom">
-
             <div class="container">
-
                 <p class="copyright">
                     Copyright &copy; <a href="#">Awik Gallery</a> all rights reserved.
                 </p>
-
             </div>
-
         </div>
-
     </footer>
 
-
-    <!--
-    - custom js link
-  -->
     <script src="./assets/js/script.js"></script>
-
-    <!--
-    - ionicon link
-  -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
