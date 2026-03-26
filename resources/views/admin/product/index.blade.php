@@ -15,7 +15,7 @@
                 <th>{{ __('Name') }}</th>
                 <th class="d-none d-lg-table-cell">{{ __('Description') }}</th>
                 <th>{{ __('Image') }}</th>
-                {{-- <th>{{ __('Price') }}</th> --}}
+                <th>{{ __('Price') }}</th>
                 <th class="d-none d-lg-table-cell">{{ __('Category') }}</th>
                 <th>{{ __('Action') }}</th>
             </tr>
@@ -27,10 +27,10 @@
                     <td>{{ $product->name ?? '-' }}</td>
                     <td class="d-none d-lg-table-cell">{{ $product->desc ?? '-' }}</td>
                     <td>
-                        <img class="img img-fluid" src="{{ asset('storage/' . $package->img) }}" alt="">
+                        <img class="img img-fluid" src="{{ asset('storage/' . $product->img) }}" alt="">
                     </td>
-                    {{-- <td>RM {{ $package->price ?? '-' }}</td> --}}
-                    <td class="d-none d-lg-table-cell">{{ $package->category->name ?? '-' }}</td>
+                    <td>Rp. {{ $product->price ?? '-' }}</td>
+                    <td class="d-none d-lg-table-cell">{{ $product->category->name ?? '-' }}</td>
                     <td class="manage-row">
                         @include('admin.product.edit')
                         @include('admin.product.delete')

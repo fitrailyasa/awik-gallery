@@ -18,7 +18,7 @@ class AdminCategoryController extends Controller
     {
         $request->validate([
             'name' => 'required|max:50',
-            'desc' => 'required|max:500',
+            'desc' => 'nullable|max:500',
             'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
         $category = Category::create($request->all());
@@ -33,7 +33,7 @@ class AdminCategoryController extends Controller
     {
         $request->validate([
             'name' => 'required|max:50',
-            'desc' => 'required|max:500',
+            'desc' => 'nullable|max:500',
             'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 

@@ -1,13 +1,13 @@
 <!-- Tombol untuk membuka modal -->
 <button role="button" class="btn btn-sm btn-warning mr-2" data-bs-toggle="modal"
-    data-bs-target=".formEdit{{ $category->id }}"><i class="fas fa-edit"></i><span class="d-none d-sm-inline">
+    data-bs-target=".formEdit{{ $product->id }}"><i class="fas fa-edit"></i><span class="d-none d-sm-inline">
         {{ __('Edit') }}</span></button>
 
 <!-- Modal -->
-<div class="modal fade formEdit{{ $category->id }}" tabindex="-1" role="dialog" aria-hidden="">
+<div class="modal fade formEdit{{ $product->id }}" tabindex="-1" role="dialog" aria-hidden="">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <form method="POST" action="{{ route('admin.category.update', $category->id) }}"
+            <form method="POST" action="{{ route('admin.product.update', $product->id) }}"
                 enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
@@ -22,10 +22,10 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="mb-2">
-                                <label class="form-label">{{ __('Name') }}</label>
+                                <label class="form-label">{{ __('Name') }}<span class="text-danger">*</span></label>
                                 <input type="text" class="form-control @error('name') is-invalid @enderror"
                                     placeholder="name" name="name" id="name"
-                                    value="{{ old('name', $category->name) }}" required>
+                                    value="{{ old('name', $product->name) }}" required>
                                 @error('name')
                                     <div class="invalid-feedback">{{ $message }}
                                     </div>
@@ -36,10 +36,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="mb-3">
-                                <label class="form-label">{{ __('Description') }}</label>
+                                <label class="form-label">{{ __('Description') }}<span
+                                        class="text-danger">*</span></label>
                                 <input type="desc" class="form-control @error('desc') is-invalid @enderror"
                                     placeholder="desc" name="desc" id="desc"
-                                    value="{{ old('desc', $category->desc) }}" required>
+                                    value="{{ old('desc', $product->desc) }}" required>
                                 @error('desc')
                                     <div class="invalid-feedback">{{ $message }}
                                     </div>
@@ -48,9 +49,9 @@
                         </div>
                     </div>
                     <div class="mb-2">
-                        <label class="form-label">{{ __('Price') }}</label>
+                        <label class="form-label">{{ __('Price') }}<span class="text-danger">*</span></label>
                         <input type="number" class="form-control @error('price') is-invalid @enderror" placeholder=""
-                            name="price" id="price" value="{{ old('price', $package->price) }}" required>
+                            name="price" id="price" value="{{ old('price', $product->price) }}" required>
                         @error('price')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
@@ -64,13 +65,13 @@
                         @enderror
                     </div>
                     <div class="mb-2">
-                        <label class="form-label">{{ __('Category') }}</label>
+                        <label class="form-label">{{ __('Category') }}<span class="text-danger">*</span></label>
                         <select class="form-control @error('category_id') is-invalid @enderror" name="category_id"
                             id="category_id" required>
                             <option value="">-- Select Category --</option>
                             @foreach ($categories as $category)
                                 <option value="{{ $category->id }}"
-                                    {{ $category->id == $package->category_id ? 'selected' : '' }}>
+                                    {{ $category->id == $product->category_id ? 'selected' : '' }}>
                                     {{ $category->name }}
                                 </option>
                             @endforeach

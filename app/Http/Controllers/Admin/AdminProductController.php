@@ -20,8 +20,10 @@ class AdminProductController extends Controller
     {
         $request->validate([
             'name' => 'required|max:50',
-            'desc' => 'required|max:500',
+            'desc' => 'nullable|max:500',
+            'price' => 'required|numeric',
             'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'category_id' => 'required',
         ]);
         $product = Product::create($request->all());
 
@@ -35,8 +37,10 @@ class AdminProductController extends Controller
     {
         $request->validate([
             'name' => 'required|max:50',
-            'desc' => 'required|max:500',
+            'desc' => 'nullable|max:500',
             'img' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'price' => 'required|numeric',
+            'category_id' => 'required',
         ]);
 
         $product = Product::where('id', $id)->first();
