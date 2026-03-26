@@ -1,199 +1,119 @@
 <x-app-layout>
     <main>
         <div class="banner">
-
             <div class="container">
-
                 <div class="slider-container has-scrollbar">
-
                     <div class="slider-item">
-
                         <img src="./assets/images/banner.webp" alt="women's latest fashion sale" class="banner-img">
-
                         <div class="banner-content">
-
                             <a href="#" class="banner-btn">Shop now</a>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
 
         <div class="category">
-
             <div class="container">
-
                 <div class="category-item-container has-scrollbar">
-
                     <div class="category-item">
-
                         <div class="category-img-box">
                             <img src="./assets/images/icons/dress.svg" alt="dress & frock" width="30">
                         </div>
-
                         <div class="category-content-box">
-
                             <div class="category-content-flex">
                                 <h3 class="category-item-title">Dress & frock</h3>
-
                                 <p class="category-item-amount">(53)</p>
                             </div>
-
                             <a href="#" class="category-btn">Show all</a>
-
                         </div>
-
                     </div>
-
                     <div class="category-item">
-
                         <div class="category-img-box">
                             <img src="./assets/images/icons/coat.svg" alt="winter wear" width="30">
                         </div>
-
                         <div class="category-content-box">
-
                             <div class="category-content-flex">
                                 <h3 class="category-item-title">Winter wear</h3>
-
                                 <p class="category-item-amount">(58)</p>
                             </div>
-
                             <a href="#" class="category-btn">Show all</a>
-
                         </div>
-
                     </div>
-
                     <div class="category-item">
-
                         <div class="category-img-box">
                             <img src="./assets/images/icons/glasses.svg" alt="glasses & lens" width="30">
                         </div>
-
                         <div class="category-content-box">
-
                             <div class="category-content-flex">
                                 <h3 class="category-item-title">Glasses & lens</h3>
-
                                 <p class="category-item-amount">(68)</p>
                             </div>
-
                             <a href="#" class="category-btn">Show all</a>
-
                         </div>
-
                     </div>
-
                     <div class="category-item">
-
                         <div class="category-img-box">
                             <img src="./assets/images/icons/shorts.svg" alt="shorts & jeans" width="30">
                         </div>
-
                         <div class="category-content-box">
-
                             <div class="category-content-flex">
                                 <h3 class="category-item-title">Shorts & jeans</h3>
-
                                 <p class="category-item-amount">(84)</p>
                             </div>
-
                             <a href="#" class="category-btn">Show all</a>
-
                         </div>
-
                     </div>
-
                     <div class="category-item">
-
                         <div class="category-img-box">
                             <img src="./assets/images/icons/tee.svg" alt="t-shirts" width="30">
                         </div>
-
                         <div class="category-content-box">
-
                             <div class="category-content-flex">
                                 <h3 class="category-item-title">T-shirts</h3>
-
                                 <p class="category-item-amount">(35)</p>
                             </div>
-
                             <a href="#" class="category-btn">Show all</a>
-
                         </div>
-
                     </div>
-
                     <div class="category-item">
-
                         <div class="category-img-box">
                             <img src="./assets/images/icons/jacket.svg" alt="jacket" width="30">
                         </div>
-
                         <div class="category-content-box">
-
                             <div class="category-content-flex">
                                 <h3 class="category-item-title">Jacket</h3>
-
                                 <p class="category-item-amount">(16)</p>
                             </div>
-
                             <a href="#" class="category-btn">Show all</a>
-
                         </div>
-
                     </div>
-
                     <div class="category-item">
-
                         <div class="category-img-box">
                             <img src="./assets/images/icons/watch.svg" alt="watch" width="30">
                         </div>
-
                         <div class="category-content-box">
-
                             <div class="category-content-flex">
                                 <h3 class="category-item-title">Watch</h3>
-
                                 <p class="category-item-amount">(27)</p>
                             </div>
-
                             <a href="#" class="category-btn">Show all</a>
-
                         </div>
-
                     </div>
-
                     <div class="category-item">
-
                         <div class="category-img-box">
                             <img src="./assets/images/icons/hat.svg" alt="hat & caps" width="30">
                         </div>
-
                         <div class="category-content-box">
-
                             <div class="category-content-flex">
                                 <h3 class="category-item-title">Hat & caps</h3>
-
                                 <p class="category-item-amount">(39)</p>
                             </div>
-
                             <a href="#" class="category-btn">Show all</a>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
 
         <div class="product-container">
@@ -2182,256 +2102,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <div>
-            <div class="container">
-                <div class="testimonials-box">
-                    <div class="testimonial">
-
-                        <h2 class="title">testimonial</h2>
-
-                        <div class="testimonial-card">
-
-                            <img src="./assets/images/testimonial-1.jpg" alt="alan doe" class="testimonial-banner"
-                                width="80" height="80">
-
-                            <p class="testimonial-name">Alan Doe</p>
-
-                            <p class="testimonial-title">CEO & Founder Invision</p>
-
-                            <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img"
-                                width="26">
-
-                            <p class="testimonial-desc">
-                                Lorem ipsum dolor sit amet consectetur Lorem ipsum
-                                dolor dolor sit amet.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="cta-container">
-
-                        <img src="./assets/images/cta-banner.jpg" alt="summer collection" class="cta-banner">
-
-                        <a href="#" class="cta-content">
-
-                            <p class="discount">25% Discount</p>
-
-                            <h2 class="cta-title">Summer collection</h2>
-
-                            <p class="cta-text">Starting @ $10</p>
-
-                            <button class="cta-btn">Shop now</button>
-
-                        </a>
-
-                    </div>
-
-
-                    <div class="service">
-
-                        <h2 class="title">Our Services</h2>
-
-                        <div class="service-container">
-
-                            <a href="#" class="service-item">
-
-                                <div class="service-icon">
-                                    <ion-icon name="boat-outline"></ion-icon>
-                                </div>
-
-                                <div class="service-content">
-
-                                    <h3 class="service-title">Worldwide Delivery</h3>
-                                    <p class="service-desc">For Order Over $100</p>
-
-                                </div>
-
-                            </a>
-
-                            <a href="#" class="service-item">
-
-                                <div class="service-icon">
-                                    <ion-icon name="rocket-outline"></ion-icon>
-                                </div>
-
-                                <div class="service-content">
-
-                                    <h3 class="service-title">Next Day delivery</h3>
-                                    <p class="service-desc">UK Orders Only</p>
-
-                                </div>
-
-                            </a>
-
-                            <a href="#" class="service-item">
-
-                                <div class="service-icon">
-                                    <ion-icon name="call-outline"></ion-icon>
-                                </div>
-
-                                <div class="service-content">
-
-                                    <h3 class="service-title">Best Online Support</h3>
-                                    <p class="service-desc">Hours: 8AM - 11PM</p>
-
-                                </div>
-
-                            </a>
-
-                            <a href="#" class="service-item">
-
-                                <div class="service-icon">
-                                    <ion-icon name="arrow-undo-outline"></ion-icon>
-                                </div>
-
-                                <div class="service-content">
-
-                                    <h3 class="service-title">Return Policy</h3>
-                                    <p class="service-desc">Easy & Free Return</p>
-
-                                </div>
-
-                            </a>
-
-                            <a href="#" class="service-item">
-
-                                <div class="service-icon">
-                                    <ion-icon name="ticket-outline"></ion-icon>
-                                </div>
-
-                                <div class="service-content">
-
-                                    <h3 class="service-title">30% money back</h3>
-                                    <p class="service-desc">For Order Over $100</p>
-
-                                </div>
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="blog">
-
-            <div class="container">
-
-                <div class="blog-container has-scrollbar">
-
-                    <div class="blog-card">
-
-                        <a href="#">
-                            <img src="./assets/images/blog-1.jpg"
-                                alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300"
-                                class="blog-banner">
-                        </a>
-
-                        <div class="blog-content">
-
-                            <a href="#" class="blog-category">Fashion</a>
-
-                            <a href="#">
-                                <h3 class="blog-title">Clothes Retail KPIs 2021 Guide for Clothes Executives.</h3>
-                            </a>
-
-                            <p class="blog-meta">
-                                By <cite>Mr Admin</cite> / <time datetime="2022-04-06">Apr 06, 2022</time>
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="blog-card">
-
-                        <a href="#">
-                            <img src="./assets/images/blog-2.jpg"
-                                alt="Curbside fashion Trends: How to Win the Pickup Battle." class="blog-banner"
-                                width="300">
-                        </a>
-
-                        <div class="blog-content">
-
-                            <a href="#" class="blog-category">Clothes</a>
-
-                            <h3>
-                                <a href="#" class="blog-title">Curbside fashion Trends: How to Win the Pickup
-                                    Battle.</a>
-                            </h3>
-
-                            <p class="blog-meta">
-                                By <cite>Mr Robin</cite> / <time datetime="2022-01-18">Jan 18, 2022</time>
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="blog-card">
-
-                        <a href="#">
-                            <img src="./assets/images/blog-3.jpg"
-                                alt="EBT vendors: Claim Your Share of SNAP Online Revenue." class="blog-banner"
-                                width="300">
-                        </a>
-
-                        <div class="blog-content">
-
-                            <a href="#" class="blog-category">Shoes</a>
-
-                            <h3>
-                                <a href="#" class="blog-title">EBT vendors: Claim Your Share of SNAP Online
-                                    Revenue.</a>
-                            </h3>
-
-                            <p class="blog-meta">
-                                By <cite>Mr Selsa</cite> / <time datetime="2022-02-10">Feb 10, 2022</time>
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="blog-card">
-
-                        <a href="#">
-                            <img src="./assets/images/blog-4.jpg"
-                                alt="Curbside fashion Trends: How to Win the Pickup Battle." class="blog-banner"
-                                width="300">
-                        </a>
-
-                        <div class="blog-content">
-
-                            <a href="#" class="blog-category">Electronics</a>
-
-                            <h3>
-                                <a href="#" class="blog-title">Curbside fashion Trends: How to Win the Pickup
-                                    Battle.</a>
-                            </h3>
-
-                            <p class="blog-meta">
-                                By <cite>Mr Pawar</cite> / <time datetime="2022-03-15">Mar 15, 2022</time>
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
         </div>
 
     </main>
