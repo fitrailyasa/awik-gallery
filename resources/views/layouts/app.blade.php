@@ -359,7 +359,7 @@
                         <div class="icon-box">
                             <ion-icon name="call-outline"></ion-icon>
                         </div>
-                        <a href="tel:+607936-8058" class="footer-nav-link">+62 851-6689-4512</a>
+                        <a href="https://wa.me/6285166894512" class="footer-nav-link">+62 851-6689-4512</a>
                     </li>
                     <li class="footer-nav-item flex">
                         <div class="icon-box">
