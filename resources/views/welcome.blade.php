@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anon - eCommerce Website</title>
+    <title>Awik Gallery - eCommerce Website</title>
 
     <!--
     - favicon
@@ -32,89 +32,6 @@
 
     <div class="overlay" data-overlay></div>
 
-    <!--
-    - MODAL
-  -->
-
-    <div class="modal" data-modal>
-
-        <div class="modal-close-overlay" data-modal-overlay></div>
-
-        <div class="modal-content">
-
-            <button class="modal-close-btn" data-modal-close>
-                <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="newsletter-img">
-                <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
-            </div>
-
-            <div class="newsletter">
-
-                <form action="#">
-
-                    <div class="newsletter-header">
-
-                        <h3 class="newsletter-title">Subscribe Newsletter.</h3>
-
-                        <p class="newsletter-desc">
-                            Subscribe the <b>Anon</b> to get latest products and discount update.
-                        </p>
-
-                    </div>
-
-                    <input type="email" name="email" class="email-field" placeholder="Email Address" required>
-
-                    <button type="submit" class="btn-newsletter">Subscribe</button>
-
-                </form>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-
-
-    <!--
-    - NOTIFICATION TOAST
-  -->
-
-    <div class="notification-toast" data-toast>
-
-        <button class="toast-close-btn" data-toast-close>
-            <ion-icon name="close-outline"></ion-icon>
-        </button>
-
-        <div class="toast-banner">
-            <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold Earrings" width="80" height="70">
-        </div>
-
-        <div class="toast-detail">
-
-            <p class="toast-message">
-                Someone in new just bought
-            </p>
-
-            <p class="toast-title">
-                Rose Gold Earrings
-            </p>
-
-            <p class="toast-meta">
-                <time datetime="PT2M">2 Minutes</time> ago
-            </p>
-
-        </div>
-
-    </div>
-
-
-
-
 
     <!--
     - HEADER
@@ -124,64 +41,6 @@
 
         <div class="header-top">
 
-            <div class="container">
-
-                <ul class="header-social-container">
-
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                    </li>
-
-                </ul>
-
-                <div class="header-alert-news">
-                    <p>
-                        <b>Free Shipping</b>
-                        This Week Order Over - $55
-                    </p>
-                </div>
-
-                <div class="header-top-actions">
-
-                    <select name="currency">
-
-                        <option value="usd">USD &dollar;</option>
-                        <option value="eur">EUR &euro;</option>
-
-                    </select>
-
-                    <select name="language">
-
-                        <option value="en-US">English</option>
-                        <option value="es-ES">Espa&ntilde;ol</option>
-                        <option value="fr">Fran&ccedil;ais</option>
-
-                    </select>
-
-                </div>
-
-            </div>
-
         </div>
 
         <div class="header-main">
@@ -189,7 +48,7 @@
             <div class="container">
 
                 <a href="#" class="header-logo">
-                    <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36">
+                    <img src="./assets/images/logo/logo.svg" alt="Awik Gallery's logo" width="120" height="36">
                 </a>
 
                 <div class="header-search-container">
@@ -235,7 +94,7 @@
                     </li>
 
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Categories</a>
+                        <a href="#" class="menu-title">Menu 1</a>
 
                         <div class="dropdown-panel">
 
@@ -383,7 +242,7 @@
                     </li>
 
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Men's</a>
+                        <a href="#" class="menu-title">Menu 2</a>
 
                         <ul class="dropdown-list">
 
@@ -407,7 +266,7 @@
                     </li>
 
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Women's</a>
+                        <a href="#" class="menu-title">Menu 3</a>
 
                         <ul class="dropdown-list">
 
@@ -431,7 +290,7 @@
                     </li>
 
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Jewelry</a>
+                        <a href="#" class="menu-title">Menu 4</a>
 
                         <ul class="dropdown-list">
 
@@ -455,7 +314,7 @@
                     </li>
 
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Perfume</a>
+                        <a href="#" class="menu-title">Menu 5</a>
 
                         <ul class="dropdown-list">
 
@@ -479,11 +338,7 @@
                     </li>
 
                     <li class="menu-category">
-                        <a href="#" class="menu-title">Blog</a>
-                    </li>
-
-                    <li class="menu-category">
-                        <a href="#" class="menu-title">Hot Offers</a>
+                        <a href="#" class="menu-title">Contact</a>
                     </li>
 
                 </ul>
@@ -783,7 +638,7 @@
 
                     <div class="slider-item">
 
-                        <img src="./assets/images/banner-1.jpg" alt="women's latest fashion sale" class="banner-img">
+                        <img src="./assets/images/banner.webp" alt="women's latest fashion sale" class="banner-img">
 
                         <div class="banner-content">
 
@@ -1852,8 +1707,7 @@
 
                                         <a href="#" class="showcase-img-box">
                                             <img src="./assets/images/products/sports-3.jpg"
-                                                alt="sports claw women's shoes" class="showcase-img"
-                                                width="70">
+                                                alt="sports claw women's shoes" class="showcase-img" width="70">
                                         </a>
 
                                         <div class="showcase-content">
@@ -3353,82 +3207,6 @@
 
     <footer>
 
-        <div class="footer-category">
-
-            <div class="container">
-
-                <h2 class="footer-category-title">Brand directory</h2>
-
-                <div class="footer-category-box">
-
-                    <h3 class="category-box-title">Fashion :</h3>
-
-                    <a href="#" class="footer-category-link">T-shirt</a>
-                    <a href="#" class="footer-category-link">Shirts</a>
-                    <a href="#" class="footer-category-link">shorts & jeans</a>
-                    <a href="#" class="footer-category-link">jacket</a>
-                    <a href="#" class="footer-category-link">dress & frock</a>
-                    <a href="#" class="footer-category-link">innerwear</a>
-                    <a href="#" class="footer-category-link">hosiery</a>
-
-                </div>
-
-                <div class="footer-category-box">
-                    <h3 class="category-box-title">footwear :</h3>
-
-                    <a href="#" class="footer-category-link">sport</a>
-                    <a href="#" class="footer-category-link">formal</a>
-                    <a href="#" class="footer-category-link">Boots</a>
-                    <a href="#" class="footer-category-link">casual</a>
-                    <a href="#" class="footer-category-link">cowboy shoes</a>
-                    <a href="#" class="footer-category-link">safety shoes</a>
-                    <a href="#" class="footer-category-link">Party wear shoes</a>
-                    <a href="#" class="footer-category-link">Branded</a>
-                    <a href="#" class="footer-category-link">Firstcopy</a>
-                    <a href="#" class="footer-category-link">Long shoes</a>
-                </div>
-
-                <div class="footer-category-box">
-                    <h3 class="category-box-title">jewellery :</h3>
-
-                    <a href="#" class="footer-category-link">Necklace</a>
-                    <a href="#" class="footer-category-link">Earrings</a>
-                    <a href="#" class="footer-category-link">Couple rings</a>
-                    <a href="#" class="footer-category-link">Pendants</a>
-                    <a href="#" class="footer-category-link">Crystal</a>
-                    <a href="#" class="footer-category-link">Bangles</a>
-                    <a href="#" class="footer-category-link">bracelets</a>
-                    <a href="#" class="footer-category-link">nosepin</a>
-                    <a href="#" class="footer-category-link">chain</a>
-                    <a href="#" class="footer-category-link">Earrings</a>
-                    <a href="#" class="footer-category-link">Couple rings</a>
-                </div>
-
-                <div class="footer-category-box">
-                    <h3 class="category-box-title">cosmetics :</h3>
-
-                    <a href="#" class="footer-category-link">Shampoo</a>
-                    <a href="#" class="footer-category-link">Bodywash</a>
-                    <a href="#" class="footer-category-link">Facewash</a>
-                    <a href="#" class="footer-category-link">makeup kit</a>
-                    <a href="#" class="footer-category-link">liner</a>
-                    <a href="#" class="footer-category-link">lipstick</a>
-                    <a href="#" class="footer-category-link">prefume</a>
-                    <a href="#" class="footer-category-link">Body soap</a>
-                    <a href="#" class="footer-category-link">scrub</a>
-                    <a href="#" class="footer-category-link">hair gel</a>
-                    <a href="#" class="footer-category-link">hair colors</a>
-                    <a href="#" class="footer-category-link">hair dye</a>
-                    <a href="#" class="footer-category-link">sunscreen</a>
-                    <a href="#" class="footer-category-link">skin loson</a>
-                    <a href="#" class="footer-category-link">liner</a>
-                    <a href="#" class="footer-category-link">lipstick</a>
-                </div>
-
-            </div>
-
-        </div>
-
         <div class="footer-nav">
 
             <div class="container">
@@ -3626,10 +3404,8 @@
 
             <div class="container">
 
-                <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
-
                 <p class="copyright">
-                    Copyright &copy; <a href="#">Anon</a> all rights reserved.
+                    Copyright &copy; <a href="#">Awik Gallery</a> all rights reserved.
                 </p>
 
             </div>
@@ -3637,10 +3413,6 @@
         </div>
 
     </footer>
-
-
-
-
 
 
     <!--
