@@ -1,4 +1,9 @@
 <x-app-layout>
+
+    <x-slot name="title">
+        {{ $category->name }}
+    </x-slot>
+
     <div class="container" style="padding: 20px">
 
         <h1 style="margin-bottom: 20px;">
